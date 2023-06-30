@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- responsive design -->
+    <!-- 장치의 화면 크기에 따라서 레이아웃 변경 -->
+    <!-- 모바일 기준(moblie first) -> PC -->
+
+    <!-- adaptive desgin -->
+    <!-- 장치별 최적의 크기 레이아웃을 사전에 만들어 놓고
+       서버/클라이언트에서 고정 크기의 레이아웃 보여줌 -->
+    <style>
+      html,
+      body {
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 1.8rem;
+        width: 12rem;
+        background-color: orange;
+      }
+      p {
+        /* 기본적인 크기단위 px */
+        /* font-size: 14px; */
+        /* 1.5em 이면 부모의 폰트 크기에 1.5배 */
+        /* font-size: 1.5em; */
+        /* rem : 최상위 부모 폰트 크기에 대한 상대크기 */
+        font-size: 1.5rem;
+        /* 너비 */
+        /* width: 500px; */
+
+        /* %: 부모요소 크기의 비율 */
+        /* width: 80%; */
+
+        /* vw(viewport width) : 브라우저 표시영역 기준으로 상대비율 */
+        /* 80vw, 뷰포트크기대비 80% */
+        /* width: 80vw; */
+        /* width: ; */
+      }
+    </style>
+  </head>
+  <body>
+    <div style="width: 50%">
+      <h1>Header Text</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sit
+        tenetur, doloribus voluptate officia temporibus, sequi ipsa ad tempora
+        laudantium facilis enim quo! Nulla, tempore facilis tenetur omnis sit
+        reprehenderit?
+      </p>
+    </div>
+  </body>
+</html>

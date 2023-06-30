@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    h1 {
+      /* #Red(||) G(||) B(||) */
+      /* 빛의 3원색 : 다 섞으면 흰색 */
+      /* 색의 진한 정도 : 0 ~ 255 -> 00 ~ ff * /
+      /*  16진수 표기 법*/
+      /* rgb to hex */
+      /* a(aplha): 투명도 같은 0(투명) ~ 1(불투명)사이의 수 */
+      /* 배경색이 있다면 배경식이 투명도에 따라서 섞인다. */
+      /* color: 전경색(foregrount), 글자색 */
+      /* background-color: 배경색, 요소의 범위까지 색이 칠해짐 */
+      /* 16진수 표기법으로 투명도 표기 가능 */
+      background-color: #f9a9e0;
+      color: #ffffff;
+    }
+    div {
+      color: rgba(200, 10, 150, 40);
+    }
+    /* h1 {
+      background-color: rgb(200, 10, 150);
+    } */
+  </style>
+  <body>
+    <h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, mollitia?
+    </h1>
+
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dicta
+        molestias delectus qui ipsam iusto, laboriosam, nesciunt accusamus
+        mollitia excepturi id sequi, sapiente voluptatibus. Recusandae libero
+        dolorum rerum illum accusantium.
+      </p>
+    </div>
+  </body>
+</html>
