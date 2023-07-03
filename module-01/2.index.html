@@ -9,21 +9,21 @@
       body {
         background-color: rgb(240, 236, 47, 0.1);
         min-height: 100vh;
-        width: 1000px;
-        margin: 0 auto;
-      }
-      .img {
-        margin-left: 25px;
-        width: 400px;
-        height: 250px;
-        margin-left: 30%;
+        /* width: 600px; */
+        /* margin: 0 auto; */
       }
 
-      .table {
-        width: 800px;
+      .btable {
+        width: 600px;
         height: 200px;
-        margin-left: 10%;
       }
+
+      .img {
+        margin-left: 25px;
+        width: 550px;
+        height: 330px;
+      }
+
       body > header > h1 {
         background-color: aquamarine;
         color: blue;
@@ -34,7 +34,7 @@
       }
       #cow {
         background-color: rgba(85, 84, 21, 0.4);
-        text-align: center;
+        color: white;
         font-size: 25px;
       }
       .cowclass {
@@ -47,19 +47,17 @@
       #tomatoclass {
         background-color: rgb(240, 238, 132);
       }
-      #tomato {
+      #tomatostart {
         background-color: rgb(153, 151, 15);
         font-size: 25px;
-        text-align: center;
       }
       #menukimchi {
-        color: red;
         font-size: 25px;
+        color: red;
       }
-      #kimchi {
+      #kimchistart {
         background-color: rgb(245, 109, 55);
         font-size: 25px;
-        text-align: center;
       }
       #kimchiclass {
         background-color: rgb(248, 186, 116, 0.5);
@@ -69,15 +67,10 @@
       }
       .bordercell {
         background-color: orange;
-        font-size: 20px;
       }
       .borderrow {
         background-color: blanchedalmond;
-        width: 200px;
-        text-align: right;
-        font-size: 20px;
       }
-
       .menu {
         font-size: 23px;
       }
@@ -89,16 +82,13 @@
       }
       .explanation {
         font-size: 18px;
-        margin: 0 auto;
-        margin-left: 10px;
       }
-
       .mainmenu {
         background-color: rgba(255, 255, 255, 0.5);
       }
       .sub {
         float: left;
-        padding-left: 5%;
+        padding-left: 10%;
         margin-left: 10%;
       }
       .ulclass {
@@ -111,7 +101,9 @@
     <nav class="mainmenu">
       <ul class="ulclass">
         <a href="#cow"
-          ><li class="sub" id="menucow"><strong>소불고기</strong></li></a
+          ><li class="sub" id="menucow">
+            <strong>소불고기</strong>
+          </li></a
         >
         <a href="#tomato"
           ><li class="sub" id="menutomato">
@@ -122,8 +114,8 @@
           ><li class="sub" id="menukimchi"><strong>김치찌개</strong></li></a
         >
       </ul>
-      <br />
-      <br />
+
+      <hr />
     </nav>
     <div class="cowclass">
       <header>
@@ -141,23 +133,22 @@
 
       <nav>
         <p class="explanation">
-          이거 하나면 밥한그릇 너무 쉽게 뚝딱 할 수 있죠! 너무나 맛있게 먹은
+          이거하나면 밥한그릇 너무 쉽게 뚝딱 할 수 있죠! 너무나 맛있게 먹은
           저희집 밥도둑 <strong>소 불고기</strong> 레시피입니다^^
         </p>
       </nav>
-      <center>
-        <h3 class="menu">
-          <a
-            href="https://www.10000recipe.com/recipe/6879215#divConfirmedMaterialArea"
-            style="text-decoration: none"
-            target="_blank"
-          >
-            재료 목록
-          </a>
-        </h3>
-      </center>
+
+      <h3 class="menu">
+        <a
+          href="https://www.10000recipe.com/recipe/6879215#divConfirmedMaterialArea"
+          style="text-decoration: none"
+          target="_blank"
+        >
+          재료 목록
+        </a>
+      </h3>
       <nav>
-        <table class="table" border="1">
+        <table class="btable">
           <tr>
             <thead id="border">
               <th><strong>재료</strong></th>
@@ -200,7 +191,7 @@
           href="https://www.10000recipe.com/recipe/6879215#stepDiv1"
           style="text-decoration: none"
           target="_blank"
-          ><h3 class="start">&nbsp; 조리순서</h3>
+          ><h3 class="start">&nbsp;조리순서</h3>
         </a>
       </h3>
       <nav>
@@ -226,13 +217,11 @@
         </section>
       </nav>
 
-      <br />
-
       <hr />
     </div>
     <div id="tomatoclass">
       <header>
-        <h2 id="tomato">
+        <h2 id="tomatostart">
           <a
             href="https://www.10000recipe.com/recipe/6865946"
             target="_blank"
@@ -241,22 +230,22 @@
           >
         </h2>
 
-        <img src="./img/tomato.jpg" alt="토마토스파게티" /class="img">
+        <img src="./img/tomato.jpg" alt="토마토스파게티" / class="img">
       </header>
-      <center>
-        <nav>
-          <p class="explanation">국물자작자각한 <strong>스파게티</strong></p>
-        </nav>
-      </center>
+
+      <nav>
+        <p class="explanation">국물자작자각한 <strong>스파게티</strong></p>
+      </nav>
+
       <a
         href="https://www.10000recipe.com/recipe/6865946#divConfirmedMaterialArea"
         style="text-decoration: none"
         target="_blank"
-        ><center><h3 class="menu">재료 목록</h3></center></a
+        ><h3 class="menu">재료 목록</h3></a
       >
 
       <nav>
-        <table class="table" border="1">
+        <table class="btable">
           <tr>
             <thead id="border">
               <th><strong>재료</strong></th>
@@ -293,12 +282,12 @@
         <li>베이컨 -3줄</li>
       </ul> -->
       </nav>
-      <br />
+
       <a
         href="https://www.10000recipe.com/recipe/6879215#stepdescr1"
         style="text-decoration: none"
         target="_blank"
-        ><h3 class="start">&nbsp; 조리순서</h3>
+        ><h3 class="start">&nbsp;조리순서</h3>
       </a>
       <nav>
         <section>
@@ -345,7 +334,7 @@
       <hr />
     </div>
     <div id="kimchiclass">
-      <h2 id="kimchi">
+      <h2 id="kimchistart">
         <a
           href="https://www.10000recipe.com/recipe/3686217"
           style="text-decoration: none"
@@ -364,17 +353,16 @@
         </p>
       </nav>
 
-      <br />
       <a
         href="https://www.10000recipe.com/recipe/3686217#divConfirmedMaterialArea"
         style="text-decoration: none"
         target="_blank"
-        ><center><h3 class="menu">재료 목록</h3></center>
+        ><h3 class="menu">재료 목록</h3>
       </a>
-      <table class="table" border="1">
+      <table class="btable">
         <tr>
           <thead id="border">
-            <th width="340"><strong>재료</strong></th>
+            <th><strong>재료</strong></th>
             <th><strong>용량</strong></th>
           </thead>
         </tr>
@@ -407,7 +395,7 @@
       <li>고춧가루 - 2큰술</li>
       <li>국간장 - 1큰술</li>
     </ul> -->
-      <br />
+
       <a
         href="https://www.10000recipe.com/recipe/3686217#stepDiv1"
         style="text-decoration: none"
@@ -459,9 +447,8 @@
           </ol>
         </section>
       </nav>
-      <br />
     </div>
-    <br />
+
     <footer>서울특별시 강남구 논현동</footer>
   </body>
 </html>

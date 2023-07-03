@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* 셀렉터 : 의사클래스 */
+    /* 해당 요소가 의사클래스 상태가 되면 스타일이 작동 */
+    /* 예) h1 요소위에 마우스 커서를 올리면 작동 */
+    /* hover: 마우스 커서를 올렸을 때 */
+    h1:hover {
+    }
+
+    h1:active {
+      color: blue;
+    }
+    /* 클릭하고 있는 동안 */
+    a:link {
+      color: green;
+    }
+
+    /* 밑줄 태그 제거 */
+    /* href 속성 있는 요소에서만 사용 */
+    a {
+      text-decoration: none;
+    }
+
+    /* 특정 링크에 방문했을 때 */
+    /* 브루아주 방문기록에 남았을 떄 */
+    a:visitd {
+      color: azure;
+    }
+  </style>
+  <body>
+    <!-- pseudo(의사, 진짜는 아니고 진짜와 비슷한 것) -->
+    <h1>Lorem, ipsum dolor.</h1>
+    <h1><a>Empty</a></h1>
+    <head>
+      <a href="https://www.naver.com" target="_blank">Naver</a>
+    </head>
+  </body>
+</html>
