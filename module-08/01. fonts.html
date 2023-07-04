@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 26px;
+        cursor: pointer;
+      }
+      h1:nth-of-type(1) {
+        /* 서체 적용 */
+        /* font-family : 서체명 */
+        /* 서체명, " 서 체 명" */
+
+        /* 여러개 지정, 왼쪽 것 부터 적용 */
+        /* 왼쪽 것이 없으면 오른쪽으로 넘어감 */
+        /* san-serif: 브라우저의 기본폰트인데 고딕체 */
+        /* 고딕체 : 꾸밈표시가 없는 서체 */
+        font-family: Arial, Helvetica, sans-serif;
+        font-family: Arial;
+      }
+
+      h1:nth-of-type(2) {
+        /* serif : 브라우저의 기본 폰트인데 명조체 */
+        /* 명조체 : 꾸밈이 있는 서체(붓긂씨) */
+        font-family: "Times New Roman";
+      }
+
+      h1:nth-of-type(3) {
+        font-family: "Noto Sans KR", sans-serif;
+        font-style: italic;
+        /* font-style: normal; */
+        font-weight: 700;
+        line-height: 1.46;
+        border: 1px solid black;
+        height: 200px;
+        /* 좌우 중앙 정렬 */
+        text-align: center;
+        /* 세로 중앙 정렬 */
+        /* 요소 높이만큼 line-height를 준다 */
+        line-height: 200px;
+      }
+
+      p {
+        /* font-weight:500px */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem, ipsum.</h1>
+    <h1>Lorem, ipsum.</h1>
+    <h1>
+      영국 작가 올라프 스테이플던이 1930년에 출판한 SF소설로, 현대 인류 문명부터
+      시작
+    </h1>
+    <p>
+      영국 작가 올라프 스테이플던이 1930년에 출판한 SF소설로, 현대 인류 문명부터
+      시작하여 20억 년간 존재했던 여러 인류 계승자들의 흥망성쇠를 마치 후대인이
+      역사를 돌아보는듯한 문체로 작성했다.
+    </p>
+  </body>
+</html>

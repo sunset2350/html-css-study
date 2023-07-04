@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        width: 200px;
+        height: 100px;
+        border: 3px solid black;
+      }
+
+      p:nth-of-type(1) {
+        /* 켄텐트가 요소크기 밖으로 나가는 경우
+        overflow: hidden 숨김 */
+        overflow: hidden;
+      }
+      p:nth-of-type(2) {
+        overflow: scroll;
+      }
+      p:nth-of-type(3) {
+        overflow-y: scroll;
+      }
+      p:nth-of-type(4) {
+        overflow-y: auto;
+      }
+      p:nth-of-type(5) {
+        overflow: hidden;
+        /* 기본 : 빈 공간을 기준으로 내림 */
+        /*  텍스트 컨텐트 아래로 안 내림*/
+        white-space: nowrap;
+        /* overflow-x: auto; */
+        /* 넘어가는 영역을 ... */
+        text-overflow: ellipsis;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia magnam aut
+      eaque iusto reiciendis libero excepturi nobis, eos odio perspiciatis
+      expedita sequi aspernatur earum voluptates, in, optio sapiente quaerat
+      corporis.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, tempore
+      ipsa a aperiam dolorem incidunt, quia culpa ipsum velit obcaecati eos
+      aliquam temporibus, quidem debitis? Quam ullam amet sunt labore.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, tempore
+      ipsa a aperiam dolorem incidunt, quia culpa ipsum velit obcaecati eos
+      aliquam temporibus, quidem debitis? Quam ullam amet sunt labore.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, tempore
+      ipsa a aperiam dolorem incidunt, quia culpa ipsum velit obcaecati eos
+      aliquam temporibus, quidem debitis? Quam ullam amet sunt labore.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, tempore
+      ipsa a aperiam dolorem incidunt, quia culpa ipsum velit obcaecati eos
+      aliquam temporibus, quidem debitis? Quam ullam amet sunt labore.
+    </p>
+  </body>
+</html>
