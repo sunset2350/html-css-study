@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url("/img/premium_photo-1676923901490-117c1fc07a5f.avif");
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+
+        text-align: center;
+        width: 1000px;
+        margin: 0 auto;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      a {
+        text-decoration: none;
+      }
+      .headcon {
+        text-align: center;
+        margin: auto;
+      }
+      .sticky-container {
+        position: sticky;
+        top: 10px;
+      }
+      .sticky-list {
+        display: list-item;
+        list-style: none;
+        font-size: 25px;
+        padding: 0;
+        margin: 0;
+      }
+      .sticky-list li {
+        top: 0;
+        position: sticky;
+        float: left;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+      }
+      h1 {
+        background-color: #d4a373;
+        color: white;
+      }
+      #eventback {
+        float: right;
+        background-color: aliceblue;
+      }
+
+      td {
+        text-align: left;
+        padding: 5px;
+        font-size: 70%;
+      }
+      .bonghead {
+        color: brown;
+      }
+      .bonghead:hover {
+        color: red;
+      }
+      .bongname {
+        color: brown;
+        margin-left: 13%;
+      }
+      .bongname:hover {
+        color: white;
+      }
+      #bongback {
+        background-color: #f9dcc4;
+        text-align: center;
+      }
+      .bonging {
+        color: brown;
+      }
+      .bonging:hover {
+        color: white;
+      }
+      #bongtable {
+        background-color: #fec89a;
+        color: brown;
+        box-sizing: border-box;
+        width: 80%;
+        margin: 0 auto;
+      }
+      #bongtable tr:nth-of-type(2n) {
+        background-color: white;
+      }
+      .bongre {
+        color: brown;
+      }
+      .bongre:hover {
+        color: white;
+      }
+      .ol {
+        font-size: 85%;
+      }
+      #align {
+        text-align: left;
+        margin: auto;
+      }
+      .chickhead {
+        color: #344e41;
+      }
+      .chickhead:hover {
+        color: red;
+      }
+      .chickname {
+        color: #344e41;
+      }
+      .chickname:hover {
+        color: white;
+      }
+      #chickback {
+        background-color: #d8f3dc;
+      }
+      .chicking {
+        color: #344e41;
+      }
+      .chicking:hover {
+        color: white;
+      }
+      #chickT1 {
+        background-color: #74c69d;
+        color: style= "color: #344e41";
+        box-sizing: border-box;
+        width: 80%;
+        margin: 0 auto;
+      }
+      #chickT1 tr:nth-of-type(2n) {
+        background-color: white;
+      }
+      .chickre {
+        color: #344e41;
+      }
+      .chickre:hover {
+        color: white;
+      }
+      .dubuhead {
+        color: #0f4c5c;
+      }
+      .dubuhead:hover {
+        color: red;
+      }
+      .dubuname {
+        color: #0f4c5c;
+      }
+      .dubuname:hover {
+        color: white;
+      }
+      #dubu-txt {
+        background-color: #bee3db;
+      }
+      .dubuing {
+        color: #0f4c5c;
+      }
+      .dubuing:hover {
+        color: white;
+      }
+      #dubuT {
+        background-color: #89b0ae;
+        color: #0f4c5c;
+        box-sizing: border-box;
+        width: 80%;
+        margin: 0 auto;
+      }
+      #dubuT tr:nth-last-of-type(2n) {
+        background-color: white;
+      }
+      .dubure {
+        color: #0f4c5c;
+      }
+      .dubure:hover {
+        color: white;
+      }
+      .steamad,
+      .elecad,
+      .bongimg,
+      .chickimg,
+      .dubuimg {
+        width: 90%;
+      }
+      .container {
+        position: relative;
+        padding-top: 0;
+      }
+      .sidebar {
+        float: right;
+        position: sticky;
+        top: 1px;
+        width: 10px;
+      }
+      footer {
+        width: 90%;
+        height: 100%;
+      }
+      .footerimage {
+        width: 1000px;
+        height: 100%;
+      }
+      .reevent {
+        width: 500px;
+        margin-left: 30px;
+        margin-top: 13px;
+        top: 0px;
+        position: sticky;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="headcon">
+        <header>
+          <h1 id="favorite-recipes">좋아하는 요리 레시피</h1>
+          <a href="좋아하는 요리 레시피"></a>
+        </header>
+      </section>
+      <hr />
+    </div>
+    <nav class="sticky-container">
+      <ul class="sticky-list">
+        <li>
+          <a href="#bongback" class="bonghead">봉골레 파스타</a>
+        </li>
+        <li>
+          <a href="#chickback" class="chickhead">닭볶음탕</a>
+        </li>
+        <li>
+          <a href="#dubu-txt" class="dubuhead">두부조림</a>
+        </li>
+      </ul>
+    </nav>
+    <br /><br />
+    <hr />
+    <!-- <aside class="sidebar">
+      <a href="https://www.10000recipe.com/event/422">
+        <img src="/img/레시피이벤트.jpg" alt="레시피 이벤트" /
+        class="reevent"></a
+      >
+    </aside> -->
+    <aside class="sidebar">
+      <a href="https://www.10000recipe.com/event/422">
+        <img src="/img/레시피이벤트.jpg" alt="레시피 이벤트" /class="reevent"
+        ></a
+      >
+      <a
+        href="https://shop.10000recipe.com/goods/goods_view.php?goodsNo=1000037581&utm
+            _source=10k_web&utm_medium=main_home_event_banner&utm_campaign=g1000037581"
+        ><img src="/img/찜기광고.jpg" alt="찜기 광고" /class="reevent">
+      </a>
+      <a href="https://shop.10000recipe.com/?path=event_view&seq=552">
+        <img src="/img/가전광고.jpg" alt="가전 광고" /class="reevent">
+      </a>
+    </aside>
+
+    <div class="bodysc">
+      <div id="bongback">
+        <p id="봉골레 파스타"></p>
+        <h2>
+          <center>
+            <a
+              href="https://www.10000recipe.com/recipe/6844648"
+              class="bongname"
+              >봉골레 파스타</a
+            >
+          </center>
+        </h2>
+        <img src="/img/뽕골레.jpg" alt="봉골레 파스타" class="bongimg" />
+
+        <h3 style="color: brown">이탈리아어로 조개를 의미하는 봉골레!</h3>
+        <p style="color: brown">
+          오늘은 바지락을 듬뿍 넣어 감칠맛을 살린 봉골레 파스타를
+          만들었어요^^<br />
+          간단하지만 분위기 있는 식탁을 만들어주는 마법 같은 요리랍니다!
+          <br />
+          화이트데이를 앞둔 주말, 봉골레 파스타로 사랑스러움을 더해보세요~
+        </p>
+        <a
+          href="https://www.10000recipe.com/recipe/6844648#btnMeasureModal"
+          class="bonging"
+          ><h2>재료목록</h2></a
+        ><br />
+        <table id="bongtable">
+          <colgroup>
+            <col width="80%" />
+            <col width="20%" />
+          </colgroup>
+          <thead>
+            <th>재료</th>
+            <th>용량</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>스파게티</td>
+              <td>160g</td>
+            </tr>
+            <tr>
+              <td>마늘</td>
+              <td>5쪽</td>
+            </tr>
+            <tr>
+              <td>양파</td>
+              <td>1/2개</td>
+            </tr>
+            <tr>
+              <td>이태리 파슬리</td>
+              <td>약간</td>
+            </tr>
+            <tr>
+              <td>화이트와인</td>
+              <td>1/3컵</td>
+            </tr>
+            <tr>
+              <td>소금</td>
+              <td>약간</td>
+            </tr>
+            <tr>
+              <td>바지락</td>
+              <td>500g</td>
+            </tr>
+            <tr>
+              <td>방울토마토</td>
+              <td>6개</td>
+            </tr>
+            <tr>
+              <td>페페론치노</td>
+              <td>4개</td>
+            </tr>
+            <tr>
+              <td>올리브오일</td>
+              <td>5큰술</td>
+            </tr>
+            <tr>
+              <td>면수</td>
+              <td>1/4컵</td>
+            </tr>
+            <tr>
+              <td>후추</td>
+              <td>약간</td>
+            </tr>
+          </tbody>
+        </table>
+        <a
+          href="https://www.10000recipe.com/recipe/6844648#stepDiv1"
+          class="bongre"
+          ><h2>조리순서:</h2></a
+        >
+        <ol style="color: brown" id="align">
+          <li class="">
+            재료를 준비해주세요. 바지락은 흐르는 물에 비벼 깨끗이 씻은 후,약간의
+            소금을 넣은 물에 담가 해감 해주세요.
+          </li>
+          <li>
+            마늘은 편으로 썰고, 방울토마토는 2등분 해두고, <br />
+            양파, 페페론치노, 이태리 파슬리는 굵게 다져주세요.
+          </li>
+          <li>
+            물 8컵에 굵은 소금 1/2큰술을 넣어 스파게티면을 6분 정도 삶고,
+            <br />
+            넓은 그릇에 펼친 후 올리브오일을 뿌려주세요. <br />
+            (면 삶은 물 1/4컵은 남겨두세요.)
+          </li>
+          <li>
+            팬에 올리브오일을 두르고 마늘을 넣고 살짝 볶다가 <br />
+            양파와 페페론치노를 넣은 후 <br />
+            약간의 소금과 후추로 밑간하여 1분 정도 볶아주세요.
+          </li>
+          <li>
+            바지락과 화이트와인, 면 삶은 물을 넣어 <br />
+            조개 입이 벌어질 때까지 끓여주세요.
+          </li>
+          <li>
+            삶은 스파게티면과 방울토마토를 넣고 <br />
+            1~2분 정도 볶아주다가 약간의 소금과 후추로 간을 하고 <br />
+            이태리파슬리와 올리브오일을 뿌려주세요.
+          </li>
+          <li>완성!</li>
+        </ol>
+      </div>
+      <hr />
+      <nav>
+        <section id="chickback">
+          <p id="닭볶음탕"></p>
+          <h2>
+            <a
+              href="https://www.10000recipe.com/recipe/6876357"
+              class="chickname"
+              >닭볶음탕</a
+            >
+          </h2>
+          <img src="/img/닭뽂음탕.jpg" alt="닭볶음탕" class="chickimg" />
+
+          <h3 style="color: #344e41">닭볶음탕 맛집이 있는데요</h3>
+          <p style="color: #344e41">
+            너무 맛있어서 제가 한번 따라해 봤어요 <br />
+            인터넷도 여기저기 뒤져보고 했는데 <br />
+            딱 요 레시피가 거의 근접한 맛이 나더라구요 <br />
+            닭볶음탕 좋아하시는분들 <br />
+            꼭 한번 해보세요~~
+          </p>
+
+          <a
+            href="https://www.10000recipe.com/recipe/6876357#btnMeasureModal"
+            class="chicking"
+            ><h2>재료목록</h2></a
+          >
+          <h3 style="color: #344e41">재료</h3>
+          <table id="chickT1">
+            <colgroup>
+              <col width="80%" />
+              <col width="20%" />
+            </colgroup>
+            <thead>
+              <th>재료</th>
+              <th>용량</th>
+            </thead>
+            <tr>
+              <td>닭</td>
+              <td>1마리</td>
+            </tr>
+            <tr>
+              <td>당면</td>
+              <td>한줌</td>
+            </tr>
+            <tr>
+              <td>감자</td>
+              <td>3개</td>
+            </tr>
+            <tr>
+              <td>당근</td>
+              <td>1/2쪽</td>
+            </tr>
+            <tr>
+              <td>양파</td>
+              <td>1~1.5개</td>
+            </tr>
+            <tr>
+              <td>고추</td>
+              <td>3개</td>
+            </tr>
+            <tr>
+              <td>대파</td>
+              <td>1대</td>
+            </tr>
+            <tr>
+              <td>다진마늘</td>
+              <td>5쪽</td>
+            </tr>
+            <tr>
+              <td>우유</td>
+              <td>200ml</td>
+            </tr>
+          </table>
+          <h3 style="color: #344e41">양념</h3>
+          <table id="chickT1">
+            <colgroup>
+              <col width="80%" />
+              <col width="20%" />
+            </colgroup>
+            <thead>
+              <th>재료</th>
+              <th>용량</th>
+            </thead>
+            <tr>
+              <td>간장</td>
+              <td>8~11큰술</td>
+            </tr>
+            <tr>
+              <td>고추장</td>
+              <td>4큰술</td>
+            </tr>
+            <tr>
+              <td>고춧가루</td>
+              <td>2큰술</td>
+            </tr>
+            <tr>
+              <td>요리당</td>
+              <td>6큰술</td>
+            </tr>
+            <tr>
+              <td>간양파</td>
+              <td>1/2개</td>
+            </tr>
+            <tr>
+              <td>청주</td>
+              <td>1큰술</td>
+            </tr>
+            <tr>
+              <td>물</td>
+              <td>400~600ml</td>
+            </tr>
+            <tr>
+              <td>후추</td>
+              <td>약간</td>
+            </tr>
+            <tr>
+              <td>참기름</td>
+              <td>약간</td>
+            </tr>
+            <tr>
+              <td>액젓</td>
+              <td>1큰술</td>
+            </tr>
+          </table>
+          <a
+            href="https://www.10000recipe.com/recipe/6876357#stepDiv1"
+            class="chickre"
+            ><h2>조리순서:</h2></a
+          >
+          <ol style="color: #344e41" id="align">
+            <li>닭 한마리를 준비 합니다</li>
+            <li>당면을 물에 불려 줍니다</li>
+            <li>닭을 깨끗이 씻어 손질 해 줍니다</li>
+            <li>닭 사이사이 붙어있는 기름을 제거해주면 좋아요</li>
+            <li>잡내를 없애기 위해 우유에 30분정도 담가 둡니다</li>
+            <li>닭을 한번후루룩 끓여 줍니다</li>
+            <li>닭끓인 물을 버리고 차가운물로 헹궈줍니다</li>
+            <li>
+              고기를 냄비에두고 <br />
+              닭한마리기준 간장9~11 고추장4 고춧가루2 <br />
+              양파갈은거1/2 마늘5알 요리당6 청주1 후추약간 액젓1 <br />
+              이렇게 양념소스를 만들어 주세요
+            </li>
+            <li>냄비에 양념장과 육수600ml를 넣고 한소끔 끓여 줍니다</li>
+            <li>
+              그사이에 야채손질을 해주시는데요 <br />
+              감자는 모서리를 깎아서 넣는게 좋아요
+            </li>
+            <li>
+              한소끔 끓을때 감자를 넣어 뚜껑을 덮고 중불에 30분정도 끓여 주세요
+            </li>
+            <li>대파 양파 당근 고추를 적당한 크기로 잘라 준비해주세요</li>
+            <li>
+              나머지 야채를 넣고 한번더 끓입니다 <br />
+              국물이 넉넉한게 좋으신 분들은 <br />
+              육수를 조금더 추가하고 양념도 살짝 추가 하시면 됩니다
+            </li>
+            <li>
+              아까 준비해둔 당면을 살짝 삶아 첨가해주세요 <br />
+              삶지않고 충분히 불려서 넣으셔도 됩니다 <br />
+              불릴시간이 없으시면 삶아서 넣어주세요 <br />
+              당면은 안넣으셔도 상관 없어요 <br />
+              참기름 후추(선택가능)도 살짝 첨가해주심 끝!!
+            </li>
+          </ol>
+        </section>
+      </nav>
+      <hr />
+      <nav>
+        <section id="dubu-txt">
+          <p id="두부조림"></p>
+          <h2>
+            <a
+              href="https://www.10000recipe.com/recipe/6906655"
+              class="dubuname"
+              >두부조림</a
+            >
+          </h2>
+
+          <img src="img/뚜뿌쪼림.jpg" alt="두부조림" class="dubuimg" />
+          <h3 style="color: #0f4c5c">양념장이 참 맛있는 두부조림</h3>
+          <p style="color: #0f4c5c">
+            포슬포슬한 두부조림에 밥을 비벼보아요~ <br />
+            명절음식이 질릴때~ 요 얼큰한 두부조림 어떠세요~ <br />
+            양념장과 함께 두부조림에 밥을 비벼~ 김이나 김치를 싸먹어보세요^^<br />
+            두부 한모로 휼륭한 한끼가 완성된답니다~
+          </p>
+          <a
+            href="https://www.10000recipe.com/recipe/6906655#btnMeasureModal"
+            class="dubuing"
+            ><h2>재료목록</h2></a
+          >
+          <table id="dubuT">
+            <colgroup>
+              <col width="80%" />
+              <col width="20%" />
+            </colgroup>
+            <thead>
+              <th>재료</th>
+              <th>용량</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>두부</td>
+                <td>1모</td>
+              </tr>
+              <tr>
+                <td>양파</td>
+                <td>1/2개</td>
+              </tr>
+              <tr>
+                <td>파</td>
+                <td>1/2대</td>
+              </tr>
+              <tr>
+                <td>식용류</td>
+                <td>1/2큰술</td>
+              </tr>
+              <tr>
+                <td>들기름</td>
+                <td>1큰술</td>
+              </tr>
+              <tr>
+                <td>물</td>
+                <td>100ml</td>
+              </tr>
+              <tr>
+                <td>간장</td>
+                <td>4큰술</td>
+              </tr>
+              <tr>
+                <td>고춧가루</td>
+                <td>2큰술</td>
+              </tr>
+              <tr>
+                <td>굴소스</td>
+                <td>1/2큰술</td>
+              </tr>
+              <tr>
+                <td>다진 마늘</td>
+                <td>1큰술</td>
+              </tr>
+              <tr>
+                <td>설탕</td>
+                <td>1큰술</td>
+              </tr>
+              <tr>
+                <td>깨</td>
+                <td>1큰술</td>
+              </tr>
+              <tr>
+                <td>참기름</td>
+                <td>1큰술</td>
+              </tr>
+            </tbody>
+          </table>
+          <a
+            href="https://www.10000recipe.com/recipe/6906655#stepDiv1"
+            class="dubure"
+            ><h2>조리순서:</h2></a
+          >
+          <ol style="color: #0f4c5c" id="align">
+            <li>두부는 체에 받쳐 물기를 빼주세요</li>
+            <li>양파는 얇게 썰어주시고 파는 송송 썰어둡니다</li>
+            <li>양념장도 만들어주세요</li>
+            <li>두부도 먹기 좋게 썰어주세요</li>
+            <li>
+              식용류 1/2 큰 술, 들기름 1 큰 술를 두룬 팬에 두부를 구워주세요
+              <br />
+              양면을 다 구워주시면 됩니다 1분정도씩 부들부들하게 구워요
+            </li>
+            <li>두부가 구워졌다면 야채와 양념장을 올리고 5분더 끓여주세요</li>
+            <li>이제 뚜껑을 덮고 1분 더 끓여줍니다</li>
+            <li>너무 간단하게 완성이죠~^^</li>
+          </ol>
+        </section>
+      </nav>
+      <hr />
+      <footer>
+        <a href="https://www.10000recipe.com/event/422">
+          <img src="/img/레시피이벤트.jpg" alt="레시피 이벤트" /
+          class="footerimage"></a
+        >
+        <a
+          href="https://shop.10000recipe.com/goods/goods_view.php?goodsNo=1000037581&utm
+            _source=10k_web&utm_medium=main_home_event_banner&utm_campaign=g1000037581"
+          ><img src="/img/찜기광고.jpg" alt="찜기 광고" / class="footerimage">
+        </a>
+        <a href="https://shop.10000recipe.com/?path=event_view&seq=552">
+          <img src="/img/가전광고.jpg" alt="가전 광고" / class="footerimage">
+        </a>
+      </footer>
+      <a href="#favorite-recipes">처음으로</a>
+    </div>
+  </body>
+</html>
