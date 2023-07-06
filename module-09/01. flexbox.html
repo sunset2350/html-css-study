@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
       .container {
-        /* flexbox로 선언되고 */
+        /* flexbox로 선언 */
         /* display: flex로 되어있는 요소 */
         /* flex 컨테이너 */
         /* flex 컨테이너 자식 요소를 */
@@ -15,9 +15,10 @@
         border: 1px solid red;
         padding: 10px;
         margin: 20px;
+
+        /* 기본적으로 아이템을 행으로 배치 */
+        /* flex-direction: row;  */
       }
-      /* 기본적으로 아이템을 행으로 배치 */
-      /* flex-direction: row */
       .item {
         border: 1px solid black;
         width: 100px;
@@ -39,7 +40,8 @@
     </style>
   </head>
   <body>
-    <!-- flex 박스는 아이템간 공간 배분 및 정렬등의 기능을 제공 -->
+    <!-- flex 박스는 아이템간 공간 배분
+    및 정렬 등의 기능을 제공 -->
     <!-- 1차원 레이아웃 모델 -->
     <!-- 행 또는 열만 처리함 -->
     <div class="container">

@@ -7,13 +7,15 @@
     <style>
       .container {
         display: flex;
-        border: 1px solid black;
+        border: 1px solid red;
         padding: 10px;
+        margin: 20px;
       }
       .item {
         border: 1px solid black;
         width: 100px;
         height: 100px;
+        text-align: center;
       }
       .item-wo-height {
         border: 1px solid black;
@@ -25,16 +27,84 @@
       .col {
         flex-direction: column;
       }
+      .wrap {
+        /* flex 컨테이너 밖으로 item이 나간다 */
+        /* 교차축으로 내려준다 */
+        flex-wrap: wrap;
+      }
+      .grow {
+        /* flex-grow: 숫자 */
+        /* flex 아이템의 늘리는 비율 */
+        /* 여분 공간만큼 늘림 */
+        flex-grow: 1;
+      }
+      .grow-2 {
+        flex-grow: 2;
+      }
+      .shrink-2 {
+        /* shrink 속성값 비율만큼 줄인다 */
+        flex-shrink: 2;
+      }
+      .flex-short {
+        /* flex-basis: 크기값 */
+        /* flex item의 주축의 기본크기 */
+        /* flex 요소는 flex-basis 주축크기 지정 */
+
+        /* grow shrink 기본크기 */
+        flex: 0 1 150px;
+      }
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="container wrap" style="width: 500px">
       <div class="item">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
-    </div>
-    <!-- 기본적으로 item은 주축방향에서 줄어든다 -->
-    <div class="container">
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
       <div class="item">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
@@ -42,75 +112,27 @@
       <div class="item">5</div>
       <div class="item">6</div>
     </div>
-    <!-- 기본적으로 item 교차축 크기만큼 늘어남 -->
-    <div class="container" style="width: 500px; height: 300px">
-      <div class="item-wo-height">1</div>
-      <div class="item-wo-height">2</div>
-      <div class="item-wo-height">3</div>
+    <div class="container">
+      <!-- 1 item과 2item이 여분공간을 1:1로 먹는다 -->
+      <!-- <div class="item-wo-size grow">1</div>
+      <div class="item-wo-size grow">2</div> -->
+      <div class="item-wo-size grow">1</div>
+      <div class="item-wo-size grow-2">2</div>
+      <div class="item-wo-size grow">3</div>
     </div>
-    <!-- 기본적으로 item의 주축방향 크기는 컨텐트 크기 -->
-    <div class="container" style="width: 500px; height: 300px">
-      <div class="item-wo-size">1</div>
-      <div class="item-wo-size">2</div>
-      <div class="item-wo-size">3</div>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item shrink-2">3</div>
+      <div class="item shrink-2">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
     </div>
-    <!-- 기본적으로 item의 주축방향 크기는 컨텐트 크기 -->
-    <div class="container col" style="width: 500px; height: 300px">
-      <div class="item-wo-size">1</div>
-      <div class="item-wo-size">2</div>
-      <div class="item-wo-size">3</div>
-    </div>
-    <!-- 기본적으로 item이 컨테이너 주축보다 넘쳐도
-   밑으로 떨어지지 않는다. -->
-    <div class="container" style="width: 500px">
-      <div class="item-wo-size">1</div>
-      <div class="item-wo-size">2</div>
-      <div class="item-wo-size">3</div>
-      <div class="item-wo-size">1</div>
-      <div class="item-wo-size">2</div>
-      <div class="item-wo-size">3</div>
-      <div class="item-wo-size">1</div>
-      <div class="item-wo-size">2</div>
-      <div class="item-wo-size">3</div>
-      <div class="item-wo-size">1</div>
-      <div class="item-wo-size">2</div>
-      <div class="item-wo-size">3</div>
-      <div class="item-wo-size">1</div>
-      <div class="item-wo-size">2</div>
-      <div class="item-wo-size">3</div>
-      <div class="item-wo-size">1</div>
-      <div class="item-wo-size">2</div>
-      <div class="item-wo-size">3</div>
-      <div class="item-wo-size">1</div>
-      <div class="item-wo-size">2</div>
-      <div class="item-wo-size">3</div>
-      <div class="item-wo-size">1</div>
-      <div class="item-wo-size">2</div>
-      <div class="item-wo-size">3</div>
-      <div class="item-wo-size">1</div>
-      <div class="item-wo-size">2</div>
-      <div class="item-wo-size">3</div>
-      <div class="item-wo-size">1</div>
-      <div class="item-wo-size">2</div>
-      <div class="item-wo-size">3</div>
-      <div class="item-wo-size">1</div>
-      <div class="item-wo-size">2</div>
-      <div class="item-wo-size">3</div>
-      <div class="item-wo-size">1</div>
-      <div class="item-wo-size">2</div>
-      <div class="item-wo-size">3</div>
-      <div class="item-wo-size">1</div>
-      <div class="item-wo-size">2</div>
-      <div class="item-wo-size">3</div>
-      <div class="item-wo-size">1</div>
-      <div class="item-wo-size">2</div>
-      <div class="item-wo-size">3</div>
-      <div class="item-wo-size">1</div>
-      <div class="item-wo-size">2</div>
-      <div class="item-wo-size">3</div>
-      <div class="item-wo-size">1</div>
-      <div class="item-wo-size">2</div>
-      <div class="item-wo-size">3</div>
+    <div class="container">
+      <div class="item flex-short">1</div>
+      <div class="item flex-short">2</div>
+      <div class="item flex-short">3</div>
+      <div class="item flex-short">3</div>
     </div>
   </body>
 </html>

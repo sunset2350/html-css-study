@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav,
+      main,
+      aside,
+      article,
+      section {
+        border: 1px solid black;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      main {
+        display: flex;
+        height: 300px;
+      }
+      aside {
+        flex: 1;
+      }
+
+      article {
+        flex: 1;
+        display: flex;
+      }
+      article {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+      section {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>nav</h1>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+    <main>
+      <aside></aside>
+      <article>
+        <section></section>
+        <section></section>
+      </article>
+    </main>
+  </body>
+</html>
